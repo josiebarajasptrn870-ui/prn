@@ -1,0 +1,149 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CHANGE THIS: Page Title -->
+  <title>Plumbing Services · FixItNow</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR (Same as index) -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-tools me-2"></i>FixItNow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#how-it-works">How it Works</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-primary rounded-pill px-4" href="#hire">Hire a Pro</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SERVICE HERO (Dynamic Background) -->
+  <section class="hero" style="padding: 80px 0 60px; text-align: left;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <!-- CHANGE THIS: Header and Description -->
+          <h1 class="display-4 fw-bold mb-3">Expert Plumbing Services</h1>
+          <p class="lead mb-0">Leaks, clogs, water heaters, and emergency repairs. Connect with licensed, background-checked local plumbers right now.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row">
+        
+        <!-- Left Side: Details -->
+        <div class="col-lg-7 mb-5 mb-lg-0 pe-lg-5">
+          <h2 class="mb-4">What we can help you with</h2>
+          <p class="text-muted mb-4">Our network of local professionals is equipped to handle any plumbing issue, big or small. Whether it's a dripping faucet or a burst pipe, we will match you with a pro who can arrive quickly and fix it right the first time.</p>
+          
+          <div class="row g-4 mb-5">
+            <div class="col-md-6">
+              <div class="d-flex gap-3">
+                <i class="fas fa-check-circle text-primary fs-4 mt-1"></i>
+                <div>
+                  <h5 class="mb-1">Leak Detection & Repair</h5>
+                  <p class="text-muted small">Fixing dripping faucets and hidden pipe leaks.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex gap-3">
+                <i class="fas fa-check-circle text-primary fs-4 mt-1"></i>
+                <div>
+                  <h5 class="mb-1">Drain Unclogging</h5>
+                  <p class="text-muted small">Clearing stubborn blockages in sinks, tubs, and toilets.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex gap-3">
+                <i class="fas fa-check-circle text-primary fs-4 mt-1"></i>
+                <div>
+                  <h5 class="mb-1">Water Heaters</h5>
+                  <p class="text-muted small">Repairing or replacing broken water heaters.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex gap-3">
+                <i class="fas fa-check-circle text-primary fs-4 mt-1"></i>
+                <div>
+                  <h5 class="mb-1">Toilet Repairs</h5>
+                  <p class="text-muted small">Fixing running toilets or replacing faulty flappers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-4 rounded-4 shadow-sm border">
+            <h4 class="mb-3"><i class="fas fa-shield-alt text-primary me-2"></i> The FixItNow Guarantee</h4>
+            <p class="text-muted mb-0">Every pro in our network is vetted, insured, and background-checked. We guarantee the work, and you only pay once you're 100% satisfied.</p>
+          </div>
+        </div>
+
+        <!-- Right Side: Hire Form -->
+        <div class="col-lg-5">
+          <div class="cta-form shadow-lg border" style="position: sticky; top: 100px;">
+            <!-- CHANGE THIS: Form Header -->
+            <h3 class="mb-4">Book a Plumber</h3>
+            <form id="jobForm">
+              <div class="mb-3">
+                <label class="form-label text-muted small fw-bold">Describe the issue</label>
+                <!-- CHANGE THIS: Placeholder -->
+                <textarea class="form-control" rows="4" placeholder="e.g., My kitchen sink is leaking..." required></textarea>
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-muted small fw-bold">When do you need help?</label>
+                <select class="form-select">
+                  <option>As soon as possible (Emergency)</option>
+                  <option>Today</option>
+                  <option>Tomorrow</option>
+                  <option>This week</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label class="form-label text-muted small fw-bold">Your Email</label>
+                <input type="email" class="form-control" placeholder="you@example.com" required>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill fw-bold fs-5">Get Free Quotes</button>
+              <p class="text-center text-muted small mt-3 mb-0">No credit card required. 100% free to post a job.</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (Same as index) -->
+  <footer class="mt-0">
+    <div class="container text-center">
+      <div class="footer-bottom border-0 mt-0 pt-0">
+        <p class="mb-0 text-muted">&copy; 2026 FixItNow. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

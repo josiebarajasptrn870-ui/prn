@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moving Help Services · FixItNow</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-tools me-2"></i>FixItNow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-primary rounded-pill px-4" href="#hire">Hire a Pro</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="hero" style="padding: 80px 0 60px; text-align: left;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold mb-3">Moving & Heavy Lifting</h1>
+          <p class="lead mb-0">Don't hurt your back. Hire professional movers to pack, load, and transport your belongings safely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
+          <h2 class="mb-4">Stress-free moving days.</h2>
+          <p class="text-muted mb-4">Moving is physically exhausting and risky for your furniture. Our local moving crews are trained to navigate tight staircases, protect your items, and do the heavy lifting so you don't have to.</p>
+          <div class="row g-4 mb-5">
+            <div class="col-md-6"><div class="d-flex gap-3"><i class="fas fa-truck text-primary fs-4 mt-1"></i><div><h5 class="mb-1">Full House Moves</h5><p class="text-muted small">Loading, transporting, and unloading.</p></div></div></div>
+            <div class="col-md-6"><div class="d-flex gap-3"><i class="fas fa-couch text-primary fs-4 mt-1"></i><div><h5 class="mb-1">Single Item Delivery</h5><p class="text-muted small">Moving a couch, piano, or safe.</p></div></div></div>
+            <div class="col-md-6"><div class="d-flex gap-3"><i class="fas fa-boxes text-primary fs-4 mt-1"></i><div><h5 class="mb-1">Packing Services</h5><p class="text-muted small">Wrapping and boxing fragile items.</p></div></div></div>
+            <div class="col-md-6"><div class="d-flex gap-3"><i class="fas fa-dumpster text-primary fs-4 mt-1"></i><div><h5 class="mb-1">Junk Removal</h5><p class="text-muted small">Hauling away old furniture and trash.</p></div></div></div>
+          </div>
+          <div class="bg-white p-4 rounded-4 shadow-sm border">
+            <h4 class="mb-3"><i class="fas fa-shield-alt text-primary me-2"></i> The FixItNow Guarantee</h4>
+            <p class="text-muted mb-0">Every pro is vetted, insured, and background-checked. You only pay once you're 100% satisfied.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="cta-form shadow-lg border" style="position: sticky; top: 100px;">
+            <h3 class="mb-4">Get Moving Quotes</h3>
+            <form class="job-request-form">
+              <div class="row g-3">
+                <div class="col-12">
+                  <label class="form-label text-muted small fw-bold">What are you moving?</label>
+                  <select class="form-select" required>
+                    <option value="" disabled selected>Select...</option>
+                    <option>Full Apartment / House</option>
+                    <option>Just a few heavy items</option>
+                    <option>Single item (Piano, Safe, etc.)</option>
+                    <option>Junk Removal</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-muted small fw-bold">Moving From (Zip)</label>
+                  <input type="text" class="form-control" placeholder="Zip Code" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-muted small fw-bold">Moving To (Zip)</label>
+                  <input type="text" class="form-control" placeholder="Zip Code" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-muted small fw-bold">Preferred Date</label>
+                  <input type="date" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-muted small fw-bold">Your Name</label>
+                  <input type="text" class="form-control" placeholder="John Doe" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-muted small fw-bold">Phone Number</label>
+                  <input type="tel" class="form-control" placeholder="(555) 123-4567" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label text-muted small fw-bold">Email Address</label>
+                  <input type="email" class="form-control" placeholder="you@example.com" required>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary w-100 py-3 rounded-pill fw-bold fs-5">Request Quotes</button>
+                  <p class="text-center text-muted small mt-2 mb-0">100% Free. No obligation to hire.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content border-0 shadow-lg" style="border-radius: 20px;"><div class="modal-body text-center p-5"><div class="mb-4"><i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i></div><h3 class="mb-3">Request Received!</h3><p class="text-muted mb-4">Thanks for submitting your requirement. Our customer representative will contact you shortly with quotes.</p><button type="button" class="btn btn-primary rounded-pill px-5 py-2 fw-bold" data-bs-dismiss="modal">Got it</button></div></div></div></div>
+    <!-- Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Your custom scripts -->
+  <script src="js/script.js"></script>
+  
+  <!-- THE FOOTER SCRIPT -->
+  <script src="js/footer.js"></script>
+</body>
+</html>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
